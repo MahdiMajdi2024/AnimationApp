@@ -22,9 +22,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     _btnAnimationController = OneShotAnimation(
       'active',
       autoplay: false,
-
-      ///lest restart the app again
-      ///No animation
     );
   }
 
@@ -102,9 +99,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           setState(() {
                             isSingInDialogShown = true;
                           });
-                          CustomSinInDialog(
+                          customSigninDialog(
                             context,
-                            onClosed: (_) {
+                            onCLosed: (_) {
                               setState(() {
                                 isSingInDialogShown = false;
                               });
